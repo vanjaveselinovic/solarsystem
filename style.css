@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+	color: white;
+	text-align: center;
+	overflow-x: hidden;
+	width: 200%;
+	margin-left: -50%;
+}
+
+h2 {
+	font-family: 'Quicksand', monospace;
+	font-weight: normal;
+}
+
+#top {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+#solar-system {
+	margin-top: calc(-100% + 100px);
+}
+
+.orbit {
+	width: 100%;
+	height: 200px;
+}
+
+.planet, #sun {
+	width: 100px;
+	height: 100px;
+	background: white;
+	display: block;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+#sun {
+	width: 100%;
+	padding-bottom: 100%;
+	background: orange;
+	margin-bottom: 100px;
+}
+
+.planet {
+	top: 50%;
+	position: relative;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.path-container {
+	position: absolute;
+	width: 200%;
+	padding-bottom: 100%;
+	margin-top: calc(-100% + 100px);
+	opacity: 0.25;
+	overflow: hidden;
+}
+
+.path {
+	position: absolute;
+	width: 100%;
+	height: 200%;
+	top: -100%;
+	border-radius: 50%;
+	border: 2px dashed white;
+	/*animation: spin 5s linear infinite;*/
+}
+
+.uncleared .path-container {
+	transform: translate(0, 10px);
+}
+
+.uncleared .path {
+	border: 20px dashed white;
+	opacity: 0.25;
+}
+
+#mercury {
+	transform:translate(0, -50%) scale(0.2);
+}
+
+#venus {
+	transform:translate(0, -50%) scale(0.4);
+}
+
+#earth {
+	transform:translate(0, -50%) scale(0.4);
+}
+
+#mars {
+	transform:translate(0, -50%) scale(0.3);
+}
+
+#ceres {
+	transform:translate(0, -50%) scale(0.2);
+}
+
+#jupiter {
+	transform:translate(0, -50%) scale(1);
+}
+
+#saturn {
+	transform:translate(0, -50%) scale(0.8);
+}
+
+#uranus {
+	transform:translate(0, -50%) scale(0.6);
+}
+
+#neptune {
+	transform:translate(0, -50%) scale(0.6);
+}
+
+#pluto {
+	transform:translate(0, -50%) scale(0.2);
+}
+
+#haumea {
+	transform:translate(0, -50%) scale(0.2);
+}
+
+#makemake {
+	transform:translate(0, -50%) scale(0.2);
+}
+
+#eris {
+	transform:translate(0, -50%) scale(0.2);
+}
