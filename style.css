@@ -84,7 +84,7 @@ h2 {
 	height: 200%;
 	top: -100%;
 	border-radius: 50%;
-	border: 2px dashed white;
+	border: 2px solid white;
 	/*animation: spin 500s linear infinite;*/
 }
 
@@ -93,7 +93,7 @@ h2 {
 }
 
 .uncleared .path {
-	border: 10px dashed white;
+	border: 10px solid white;
 	opacity: 0.25;
 }
 
