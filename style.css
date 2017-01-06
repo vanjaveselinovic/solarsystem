@@ -119,6 +119,7 @@ h2 {
 
 #ceres {
 	transform: translate(0, -50%) scale(0.2);
+	background: #9b918b;
 }
 
 #jupiter {
@@ -698,4 +699,85 @@ h2 {
 	height: 4%;
 	top: 58%;
 	left: 20%;
+}
+
+/* ------------------- CERES ------------------- */
+
+#ceres .crater {
+	background: #88929d;
+}
+
+#ceres .surface .crater:nth-child(1) {
+	left: 10%;
+	top: 20%;
+	width: 10%;
+	height: 20%;
+}
+
+#ceres .surface .crater:nth-child(2) {
+	left: 25%;
+	top: 25%;
+	width: 10%;
+	height: 20%;
+}
+
+#ceres .surface .crater:nth-child(3) {
+	left: 40%;
+	top: 35%;
+	width: 15%;
+	height: 30%;
+}
+
+#ceres .surface .crater:nth-child(4) {
+	background: #9ca8af !important;
+	left: 45%;
+	top: 80%;
+	width: 10%;
+	height: 20%;
+}
+
+#ceres .surface .crater:nth-child(5) {
+	left: 55%;
+	top: 65%;
+	width: 10%;
+	height: 20%;
+}
+
+#ceres .surface .crater:nth-child(6) {
+	left: 0%;
+	top: 40%;
+	width: 10%;
+	height: 20%;
+}
+
+#ceres .surface .crater:nth-child(7) {
+	background: #76849a !important;
+	left: 70%;
+	top: 30%;
+	width: 15%;
+	height: 30%;
+}
+
+#ceres .surface .crater:nth-child(8) {
+	background: #ccd6d8 !important;
+	left: 76%;
+	top: 41%;
+	width: 4%;
+	height: 8%;
+}
+
+#ceres .surface .crater:nth-child(9) {
+	background: #ccd6d8 !important;
+	left: 80%;
+	top: 41%;
+	width: 4%;
+	height: 8%;
+}
+
+#ceres .surface .crater:nth-child(10) {
+	background: #9ca8af !important;
+	left: 3%;
+	top: 46%;
+	width: 4%;
+	height: 8%;
 }
