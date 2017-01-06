@@ -161,7 +161,16 @@ h2 {
 	transform: translate(0, -50%) scale(0.2);
 }
 
-@keyframes planetrotation {
+@keyframes planetrotationcounterclockwise {
+	from {
+		left: -200%;
+	}
+	to {
+		left: 0;
+	}
+}
+
+@keyframes planetrotationclockwise {
 	from {
 		left: 0;
 	}
@@ -176,7 +185,11 @@ h2 {
 	height: 100%;
 	top: 0;
 	left: 0;
-	animation: planetrotation 2.5s linear infinite;
+	animation: planetrotationcounterclockwise 2.5s linear infinite;
+}
+
+#venus .surface-container {
+	animation-name: planetrotationclockwise;
 }
 
 .surface {
@@ -191,22 +204,13 @@ h2 {
 	left: 50%;
 }
 
-@keyframes cloudsrotation {
-	from {
-		left: 0;
-	}
-	to {
-		left: -200%;
-	}
-}
-
 .clouds-container {
 	position: absolute;
 	width: 400%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	animation: cloudsrotation 5s linear infinite;
+	animation: planetrotationcounterclockwise 5s linear infinite;
 }
 
 .clouds {
