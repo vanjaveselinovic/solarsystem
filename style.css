@@ -114,7 +114,7 @@ h2 {
 
 #mars {
 	transform: translate(0, -50%) scale(0.3);
-	background: #c25848;
+	background: #974c6d;
 }
 
 #ceres {
@@ -228,6 +228,17 @@ h2 {
 
 .line {
 	position: absolute;
+}
+
+.landmass {
+	transform: rotate(45deg);
+	width: 15%;
+	height: 30%;
+	position: absolute;
+}
+
+.ice {
+	transform: scale(3, 1) rotate(45deg);
 }
 
 /* ------------------- MERCURY ------------------- */
@@ -417,16 +428,11 @@ h2 {
 
 #earth .surface .landmass {
 	background: #42991e;
-	transform: rotate(45deg);
-	width: 15%;
-	height: 30%;
-	position: absolute;
 }
 
-#earth .surface .ice.landmass {
+#earth .surface .ice {
 	background: #a9c0de;
-	top: 102%;
-	transform: scale(3, 1) rotate(45deg);
+	top: 101%;
 }
 
 #earth .surface .landmass:nth-child(1) {
@@ -567,3 +573,121 @@ h2 {
 }
 
 /* ------------------- MARS ------------------- */
+
+#mars .crater {
+	background: #c25848;
+}
+
+#mars .line {
+	background: #974c6d;
+}
+
+#mars .ice {
+	background: #e3a6b0;
+	top: -27%;
+	z-index: 1;
+}
+
+#mars .surface .ice:nth-child(1) {
+	left: 0%;
+}
+
+#mars .surface .ice:nth-child(2) {
+	left: 10%;
+}
+
+#mars .surface .ice:nth-child(3) {
+	left: 20%;
+}
+
+#mars .surface .ice:nth-child(4) {
+	left: 30%;
+}
+
+#mars .surface .ice:nth-child(5) {
+	left: 40%;
+}
+
+#mars .surface .ice:nth-child(6) {
+	left: 50%;
+}
+
+#mars .surface .ice:nth-child(7) {
+	left: 60%;
+}
+
+#mars .surface .ice:nth-child(8) {
+	left: 70%;
+}
+
+#mars .surface .ice:nth-child(9) {
+	left: 80%;
+}
+
+#mars .surface .ice:nth-child(10) {
+	left: 90%;
+}
+
+#mars .surface .crater:nth-child(11) {
+	left: 0%;
+	top: -25%;
+	height: 100%;
+	width: 50%;
+}
+
+#mars .surface .crater:nth-child(12) {
+	left: 40%;
+	top: 0%;
+	height: 50%;
+	width: 25%;
+}
+
+#mars .surface .crater:nth-child(13) {
+	left: 60%;
+	top: 30%;
+	height: 30%;
+	width: 15%;
+}
+
+#mars .surface .crater:nth-child(14) {
+	left: 50%;
+	top: -60%;
+	height: 100%;
+	width: 50%;
+}
+
+#mars .surface .crater:nth-child(15) {
+	left: -15%;
+	top: 10%;
+	height: 50%;
+	width: 25%;
+}
+
+#mars .surface .crater:nth-child(16) {
+	left: 35%;
+	top: 75%;
+	height: 16%;
+	width: 8%;
+}
+
+#mars .surface .crater:nth-child(17) {
+	left: 73%;
+	top: 61%;
+	height: 26%;
+	width: 13%;
+}
+
+#mars .surface .crater:nth-child(18) {
+	background: #974c6d !important;
+	left: 30%;
+	top: 55%;
+	height: 10%;
+	width: 5%;
+}
+
+#mars .surface .line:nth-child(19) {
+	width: 25%;
+	height: 3%;
+	top: 58%;
+	left: 20%;
+}
