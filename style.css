@@ -373,17 +373,16 @@ h2 {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	border: 20px solid;
 	border-radius: 100%;
 	top: 0;
 }
 
 #venus .surface .cloud:nth-child(odd) {
-	border-color: #eba86d;
+	background: #eba86d;
 }
 
 #venus .surface .cloud:nth-child(even) {
-	border-color: #d99d57;
+	background: #d99d57;
 }
 
 #venus .surface .cloud:nth-child(1) {
