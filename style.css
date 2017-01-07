@@ -124,6 +124,7 @@ h2 {
 
 #jupiter {
 	transform: translate(0, -50%) scale(1.5);
+	background: #cb9d7c;
 }
 
 #jupiter:hover {
@@ -226,7 +227,7 @@ h2 {
 	left: 50%;
 }
 
-.crater {
+.crater, .spot {
 	border-radius: 50%;
 	position: absolute;
 }
@@ -244,6 +245,11 @@ h2 {
 
 .ice {
 	transform: scale(3, 1) rotate(45deg);
+}
+
+.band {
+	position: absolute;
+	width: 200%;
 }
 
 /* ------------------- MERCURY ------------------- */
@@ -780,4 +786,86 @@ h2 {
 	top: 46%;
 	width: 4%;
 	height: 8%;
+}
+
+/* ------------------- JUPITER ------------------- */
+
+#jupiter .surface .spot:nth-child(1) {
+	top: 60%;
+	left: 45%;
+	width: 5%;
+	height: 10%;
+	background: #cb9d7c;
+	z-index: 2;
+	border-radius: 0;
+}
+
+#jupiter .surface .spot:nth-child(1)::before,
+#jupiter .surface .spot:nth-child(1)::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #cb9d7c;
+	border-radius: 50%;
+	top: 0;
+	content: '';
+}
+
+#jupiter .surface .spot:nth-child(1)::before {
+	left: -50%;
+}
+
+#jupiter .surface .spot:nth-child(1)::after {
+	right: -50%;
+}
+
+#jupiter .surface .spot:nth-child(2) {
+	top: 60%;
+	left: 45%;
+	width: 5%;
+	height: 10%;
+	background: #be534f;
+	z-index: 2;
+}
+
+#jupiter .surface .band:nth-child(3) {
+	background: repeating-linear-gradient(45deg, #d0aa90 3%, #cb9d7c 10%);
+	top: 15%;
+	height: 10%;
+}
+
+#jupiter .surface .band:nth-child(4) {
+	background: repeating-linear-gradient(135deg, #d2cfd5 3%, #d0aa90 10%);
+	top: 25%;
+	height: 10%;
+}
+
+#jupiter .surface .band:nth-child(5) {
+	background: repeating-linear-gradient(45deg, #be534f 3%, #c57865 10%);
+	top: 35%;
+	height: 10%;
+}
+
+#jupiter .surface .band:nth-child(6) {
+	background: repeating-linear-gradient(135deg, #95a2a9 3%, #d2cfd5 10%);
+	top: 45%;
+	height: 10%;
+}
+
+#jupiter .surface .band:nth-child(7) {
+	background: repeating-linear-gradient(45deg, #be534f 3%, #c57865 10%);
+	top: 55%;
+	height: 10%;
+}
+
+#jupiter .surface .band:nth-child(8) {
+	background: repeating-linear-gradient(135deg, #d2cfd5 3%, #d0aa90 10%);
+	top: 65%;
+	height: 10%;
+}
+
+#jupiter .surface .band:nth-child(9) {
+	background: repeating-linear-gradient(45deg, #d0aa90 3%, #cb9d7c 10%);
+	top: 75%;
+	height: 10%;
 }
