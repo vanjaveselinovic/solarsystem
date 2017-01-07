@@ -133,6 +133,7 @@ h2 {
 
 #saturn {
 	transform: translate(0, -50%) scale(1.2);
+	background: #dcba7f;
 }
 
 #saturn:hover {
@@ -868,4 +869,30 @@ h2 {
 	background: repeating-linear-gradient(45deg, #d0aa90 3%, #cb9d7c 10%);
 	top: 75%;
 	height: 10%;
+}
+
+/* ------------------- SATURN ------------------- */
+
+#saturn .band:nth-child(1) {
+	height: 20%;
+	top: 0;
+	background: repeating-linear-gradient(135deg, #969382 2%, #b4a780 10%);
+}
+
+#saturn .band:nth-child(2) {
+	height: 20%;
+	bottom: 0;
+	background: repeating-linear-gradient(45deg, #bd9988 2%, #b4a780 10%);
+}
+
+#saturn .band:nth-child(3) {
+	height: 20%;
+	top: 20%;
+	background: repeating-linear-gradient(45deg, #b4a780 2%, #dcba7f 10%);
+}
+
+#saturn .band:nth-child(4) {
+	height: 20%;
+	bottom: 20%;
+	background: repeating-linear-gradient(135deg, #dcba7f 2%, #cda288 10%);
 }
