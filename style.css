@@ -147,6 +147,7 @@ h2 {
 
 #neptune {
 	transform: translate(0, -50%) scale(0.6);
+	background: #0f5aff;
 }
 
 #pluto {
@@ -937,4 +938,67 @@ h2 {
 #uranus .surface .band:nth-child(5) {
 	bottom: 0;
 	background: repeating-linear-gradient(45deg, #87cce0 2%, #88bcc1 10%);
+}
+
+/* ------------------- NEPTUNE ------------------- */
+
+#neptune .surface .spot:nth-child(1) {
+	top: 55%;
+	left: 50%;
+	width: 10%;
+	height: 10%;
+	background: #0f4ee0;
+	z-index: 2;
+	border-radius: 25% / 50%;
+	transform: translate(-25%, 0);
+}
+
+#neptune .surface .spot:nth-child(2) {
+	top: 55%;
+	left: 50%;
+	width: 5%;
+	height: 10%;
+	background: linear-gradient(45deg, #b9cfff 0%, #b9cfff 45%, #0f47cf 45%);
+	z-index: 2;
+}
+
+#neptune .band {
+	height: 20%;
+}
+
+#neptune .surface .band:nth-child(3) {
+	background: repeating-linear-gradient(135deg, #0f4ee0 2%, #0f5aff 10%);
+	top: 0;
+}
+
+#neptune .surface .band:nth-child(4) {
+	background: repeating-linear-gradient(45deg, #0f4ee0 2%, #0f5aff 10%);
+	bottom: 0;
+}
+
+#neptune .surface .band:nth-child(5) {
+	background: repeating-linear-gradient(45deg, #0f5aff 2%, #0f47cf 10%);
+	top: 20%;
+}
+
+#neptune .surface .band:nth-child(6) {
+	background: repeating-linear-gradient(135deg, #0f5aff 2%, #0f47cf 10%);
+	bottom: 20%;
+}
+
+#neptune .surface .band:nth-child(7) {
+	background: repeating-linear-gradient(45deg, #5288ff 2%, #0f5aff 10%);
+	top: 30%;
+	transform: translate(-11%, 0);
+}
+
+#neptune .surface .band:nth-child(8) {
+	background: repeating-linear-gradient(135deg, #5288ff 2%, #0f5aff 10%);
+	bottom: 30%;
+	transform: translate(-11%, 0);
+}
+
+#neptune .surface .band:nth-child(9) {
+	background: #0f5aff;
+	top: 40%;
 }
