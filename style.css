@@ -142,6 +142,7 @@ h2 {
 
 #uranus {
 	transform: translate(0, -50%) scale(0.6);
+	background: #87cce0;
 }
 
 #neptune {
@@ -895,4 +896,45 @@ h2 {
 	height: 20%;
 	bottom: 20%;
 	background: repeating-linear-gradient(135deg, #dcba7f 2%, #cda288 10%);
+}
+
+/* ------------------- URANUS ------------------- */
+
+#uranus .line {
+	z-index: 1;
+	background: #c6ebf4;
+	height: 3%;
+	top: 40%;
+}
+
+#uranus .surface .line:nth-child(1) {
+	left: 15%;
+	width: 10%;
+}
+
+#uranus .surface .line:nth-child(2) {
+	left: 80%;
+	width: 7%;
+}
+
+#uranus .surface .line:nth-child(3) {
+	background: #7cb7c5;
+	top: 18%;
+	left: 40%;
+	width: 15%;
+	height: 4%;
+}
+
+#uranus .band {
+	height: 20%;
+}
+
+#uranus .surface .band:nth-child(4) {
+	top: 0;
+	background: repeating-linear-gradient(135deg, #87cce0 2%, #88bcc1 10%);
+}
+
+#uranus .surface .band:nth-child(5) {
+	bottom: 0;
+	background: repeating-linear-gradient(45deg, #87cce0 2%, #88bcc1 10%);
 }
