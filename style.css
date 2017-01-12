@@ -152,6 +152,7 @@ h2 {
 
 #pluto {
 	transform: translate(0, -50%) scale(0.2);
+	background: #bc9d8a;
 }
 
 #haumea {
@@ -1001,4 +1002,124 @@ h2 {
 #neptune .surface .band:nth-child(9) {
 	background: #0f5aff;
 	top: 40%;
+}
+
+/* ------------------- PLUTO ------------------- */
+
+#pluto .crater {
+	background: #906969;
+}
+
+#pluto .crater:nth-child(1) {
+	top: 30%;
+	left: 10%;
+	height: 20%;
+	width: 10%;
+}
+
+#pluto .crater:nth-child(2) {
+	top: 25%;
+	left: 15%;
+	height: 30%;
+	width: 15%;
+}
+
+#pluto .crater:nth-child(3) {
+	top: 45%;
+	left: 40%;
+	height: 20%;
+	width: 10%;
+}
+
+#pluto .crater:nth-child(4) {
+	top: 40%;
+	left: 48%;
+	height: 24%;
+	width: 12%;
+}
+
+#pluto .crater:nth-child(5) {
+	top: 58%;
+	left: 60%;
+	height: 20%;
+	width: 10%;
+}
+
+#pluto .crater:nth-child(6) {
+	top: 50%;
+	left: 68%;
+	height: 20%;
+	width: 10%;
+}
+
+#pluto .crater:nth-child(7) {
+	top: 43%;
+	left: 75%;
+	height: 30%;
+	width: 15%;
+}
+
+#pluto .crater:nth-child(8) {
+	top: 45%;
+	left: 93%;
+	height: 22%;
+	width: 11%;
+}
+
+#pluto .crater:nth-child(9) {
+	top: 58%;
+	left: 6%;
+	height: 18%;
+	width: 9%;
+}
+
+#pluto .crater:nth-child(10) {
+	background: #774959;
+	top: 40%;
+	left: 5%;
+	height: 20%;
+	width: 20%;
+	border-radius: 25% / 50%;
+}
+
+#pluto .crater:nth-child(11) {
+	background: #774959;
+	top: 48%;
+	left: 0%;
+	height: 10%;
+	width: 10%;
+	border-radius: 25% / 50%;
+}
+
+#pluto .crater:nth-child(12) {
+	background: #774959;
+	top: 60%;
+	left: 32%;
+	height: 15%;
+	width: 15%;
+	border-radius: 25% / 50%;
+}
+
+#pluto .crater:nth-child(13) {
+	background: #beb1b0;
+	top: 25%;
+	left: 20%;
+	height: 30%;
+	width: 15%;
+}
+
+#pluto .crater:nth-child(14) {
+	background: #beb1b0;
+	top: 35%;
+	left: 30%;
+	height: 30%;
+	width: 15%;
+}
+
+#pluto .crater:nth-child(15) {
+	background: #beb1b0;
+	top: 50%;
+	left: 25%;
+	height: 20%;
+	width: 10%;
 }
