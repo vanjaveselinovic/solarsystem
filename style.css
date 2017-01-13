@@ -24,6 +24,18 @@ h2 {
 	text-align: center;
 }
 
+#sun {
+	width: 100px;
+	height: 100px;
+	display: block;
+	border-radius: 50%;
+	margin: 0 auto;
+	width: 100%;
+	padding-bottom: 100%;
+	background: #ff8a3c;
+	margin-bottom: 100px;
+}
+
 #solar-system {
 	margin-top: calc(-100% + 100px);
 }
@@ -33,31 +45,40 @@ h2 {
 	height: 200px;
 }
 
-.planet, #sun {
+.planet {
 	width: 100px;
 	height: 100px;
-	background: white;
 	display: block;
 	border-radius: 50%;
 	margin: 0 auto;
-}
-
-#sun {
-	width: 100%;
-	padding-bottom: 100%;
-	background: #ff8a3c;
-	margin-bottom: 100px;
-}
-
-.planet {
 	top: 50%;
 	position: relative;
 	z-index: 1;
-	overflow: hidden;
+	transition: transform 0.2s;
 }
 
 .planet:hover {
 	transform: translate(0, -50%) !important;
+}
+
+.planet-surface {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.planet-shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(315deg, #0f001e 0%, #0f001e 50%, transparent 50%);
+	z-index: 5;
+	opacity: 0.9;
+	transition: top 0.5s, left 0.5s;
 }
 
 @keyframes spin {
@@ -86,6 +107,7 @@ h2 {
 	border-radius: 50%;
 	border: 2px solid white;
 	/*animation: spin 500s linear infinite;*/
+	z-index: 6;
 }
 
 .uncleared .path-container {
@@ -104,7 +126,6 @@ h2 {
 
 #venus {
 	transform: translate(0, -50%) scale(0.4);
-	background: #d99d57;
 }
 
 #earth {
@@ -123,7 +144,7 @@ h2 {
 }
 
 #jupiter {
-	transform: translate(0, -50%) scale(1.5);
+	transform: translate(0, -50%) scale(1.52);
 	background: #cb9d7c;
 }
 
@@ -137,7 +158,7 @@ h2 {
 }
 
 #saturn:hover {
-	transform: translate(0, -50%) scale(1.5) !important;
+	transform: translate(0, -50%) scale(1.52) !important;
 }
 
 #uranus {
@@ -1008,7 +1029,7 @@ h2 {
 /* ------------------- PLUTO ------------------- */
 
 #pluto .crater {
-	background: #906969;
+	background: #a58275;
 }
 
 #pluto .crater:nth-child(1) {
