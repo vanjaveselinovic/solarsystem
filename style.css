@@ -201,7 +201,7 @@ h2 {
 }
 
 #makemake {
-	transform: translate(0, -50%) scale(0.2);
+	transform: translate(0, -50%) scale(0.13);
 	background: #88495e;
 }
 
@@ -1271,4 +1271,85 @@ h2 {
 	left: 0;
 	width: 10%;
 	height: 20%;
+}
+
+/* ------------------- ERIS ------------------- */
+
+#eris {
+	background: #d7d6ef;
+}
+
+#eris .crater {
+	background: #c9c7e4;
+}
+
+#eris .line {
+	background: #d7d6ef;
+	width: 1%;
+	height: 200%;
+	top: -50%;
+}
+
+#eris .crater:nth-child(1) {
+	top: 0;
+	left: 0;
+	width: 30%;
+	height: 60%;
+}
+
+#eris .crater:nth-child(2) {
+	bottom: -10%;
+	left: 35%;
+	width: 30%;
+	height: 60%;
+}
+
+#eris .crater:nth-child(3) {
+	top: -20%;
+	left: 18%;
+	width: 20%;
+	height: 40%;
+}
+
+#eris .crater:nth-child(4) {
+	top: 0%;
+	left: -19%;
+	width: 20%;
+	height: 40%;
+}
+
+#eris .crater:nth-child(5) {
+	background: #d7d6ef;
+	top: 22%;
+	left: 14%;
+	width: 10%;
+	height: 20%;
+}
+
+#eris .crater:nth-child(6) {
+	background: #d7d6ef;
+	top: 45%;
+	left: 17%;
+	width: 5%;
+	height: 10%;
+}
+
+#eris .line:nth-child(7) {
+	left: 8%;
+	transform: rotate(-15deg);
+}
+
+#eris .line:nth-child(8) {
+	left: 20%;
+	transform: rotate(45deg);
+}
+
+#eris .line:nth-child(9) {
+	left: 46%;
+	transform: rotate(-35deg);
+}
+
+#eris .line:nth-child(10) {
+	left: 53%;
+	transform: rotate(-10deg);
 }
