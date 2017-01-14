@@ -49,16 +49,18 @@ h2 {
 	width: 100px;
 	height: 100px;
 	display: block;
+	transform: translate(0, -50%);
 	border-radius: 50%;
 	margin: 0 auto;
 	top: 50%;
 	position: relative;
 	z-index: 1;
-	transition: transform 0.2s;
+	transition: width 0.2s, height 0.2s;
 }
 
 .planet:hover {
-	transform: translate(0, -50%) !important;
+	width: 100px !important;
+	height: 100px !important;
 }
 
 .planet-surface {
@@ -71,10 +73,10 @@ h2 {
 
 .planet-shadow {
 	position: absolute;
-	width: 100.2%;
-	height: 100.2%;
-	top: -0.1%;
-	left: -0.1%;
+	width: 102%;
+	height: 102%;
+	top: -1%;
+	left: -1%;
 	border-radius: 45%;
 	z-index: 5;
 	opacity: 0.9;
@@ -139,74 +141,95 @@ h2 {
 }
 
 #mercury {
-	transform: translate(0, -50%) scale(0.2);
+	width: 20px;
+	height: 20px;
 	background: #9b8990;
 }
 
 #venus {
-	transform: translate(0, -50%) scale(0.4);
+	width: 40px;
+	height: 40px;
 }
 
 #earth {
-	transform: translate(0, -50%) scale(0.4);
+	width: 40px;
+	height: 40px;
 	background: #2b84e6;
 }
 
 #mars {
-	transform: translate(0, -50%) scale(0.3);
+	width: 30px;
+	height: 30px;
 	background: #974c6d;
 }
 
 #ceres {
-	transform: translate(0, -50%) scale(0.2);
+	width: 20px;
+	height: 20px;
 	background: #9b918b;
 }
 
 #jupiter {
-	transform: translate(0, -50%) scale(1.52);
+	width: 150px;
+	height: 150px;
 	background: #cb9d7c;
 }
 
 #jupiter:hover {
-	transform: translate(0, -50%) scale(1.6) !important;
+	width: 160px !important;
+	height: 160px !important;
 }
 
 #saturn {
-	transform: translate(0, -50%) scale(1.2);
+	width: 120px;
+	height: 120px;
 	background: #dcba7f;
 }
 
 #saturn:hover {
-	transform: translate(0, -50%) scale(1.52) !important;
+	width: 150px !important;
+	height: 150px !important;
 }
 
 #uranus {
-	transform: translate(0, -50%) scale(0.6);
+	width: 60px;
+	height: 60px;
 	background: #87cce0;
 }
 
 #neptune {
-	transform: translate(0, -50%) scale(0.6);
+	width: 60px;
+	height: 60px;
 	background: #0f5aff;
 }
 
 #pluto {
-	transform: translate(0, -50%) scale(0.2);
+	width: 20px;
+	height: 20px;
 	background: #bc9d8a;
 }
 
 #haumea {
-	transform: translate(0, -50%) scale(0.125);
+	width: 18px;
+	height: 12px;
+	border-radius: 33% / 50%;
 	background: #a9b7c1;
 }
 
+#haumea:hover {
+	width: 150px !important;
+	height: 100px !important;
+}
+
 #makemake {
-	transform: translate(0, -50%) scale(0.13);
+	width: 13px;
+	height: 13px;
 	background: #88495e;
 }
 
 #eris {
-	transform: translate(0, -50%) scale(0.2);
+	width: 20px;
+	height: 20px;
 }
 
 @keyframes planetrotationcounterclockwise {
@@ -1168,19 +1191,13 @@ h2 {
 
 /* ------------------- HAUMEA ------------------- */
 
-#haumea {
-	width: 150px;
-	height: 100px;
-	border-radius: 50px;
-}
-
 #haumea .planet-shadow {
 	height: 150%;
 	top: -25%;
 }
 
 #haumea .planet-surface {
-	border-radius: 50px;
+	border-radius: 33% / 50%;
 }
 
 #haumea .spot:nth-child(1) {
