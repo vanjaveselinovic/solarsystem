@@ -49,18 +49,16 @@ h2 {
 	width: 100px;
 	height: 100px;
 	display: block;
-	transform: translate(0, -50%);
 	border-radius: 50%;
 	margin: 0 auto;
 	top: 50%;
 	position: relative;
 	z-index: 1;
-	transition: width 0.2s, height 0.2s;
+	transition: transform 0.2s;
 }
 
 .planet:hover {
-	width: 100px !important;
-	height: 100px !important;
+	transform: translate(0, -50%) !important;
 }
 
 .planet-surface {
@@ -141,95 +139,74 @@ h2 {
 }
 
 #mercury {
-	width: 20px;
-	height: 20px;
+	transform: translate(0, -50%) scale(0.2);
 	background: #9b8990;
 }
 
 #venus {
-	width: 40px;
-	height: 40px;
+	transform: translate(0, -50%) scale(0.4);
 }
 
 #earth {
-	width: 40px;
-	height: 40px;
+	transform: translate(0, -50%) scale(0.4);
 	background: #2b84e6;
 }
 
 #mars {
-	width: 30px;
-	height: 30px;
+	transform: translate(0, -50%) scale(0.3);
 	background: #974c6d;
 }
 
 #ceres {
-	width: 20px;
-	height: 20px;
+	transform: translate(0, -50%) scale(0.2);
 	background: #9b918b;
 }
 
 #jupiter {
-	width: 150px;
-	height: 150px;
+	transform: translate(0, -50%) scale(1.52);
 	background: #cb9d7c;
 }
 
 #jupiter:hover {
-	width: 160px !important;
-	height: 160px !important;
+	transform: translate(0, -50%) scale(1.6) !important;
 }
 
 #saturn {
-	width: 120px;
-	height: 120px;
+	transform: translate(0, -50%) scale(1.2);
 	background: #dcba7f;
 }
 
 #saturn:hover {
-	width: 150px !important;
-	height: 150px !important;
+	transform: translate(0, -50%) scale(1.52) !important;
 }
 
 #uranus {
-	width: 60px;
-	height: 60px;
+	transform: translate(0, -50%) scale(0.6);
 	background: #87cce0;
 }
 
 #neptune {
-	width: 60px;
-	height: 60px;
+	transform: translate(0, -50%) scale(0.6);
 	background: #0f5aff;
 }
 
 #pluto {
-	width: 20px;
-	height: 20px;
+	transform: translate(0, -50%) scale(0.2);
 	background: #bc9d8a;
 }
 
 #haumea {
-	width: 18px;
-	height: 12px;
-	border-radius: 33% / 50%;
+	transform: translate(0, -50%) scale(0.125);
 	background: #a9b7c1;
 }
 
-#haumea:hover {
-	width: 150px !important;
-	height: 100px !important;
-}
-
 #makemake {
-	width: 13px;
-	height: 13px;
+	transform: translate(0, -50%) scale(0.13);
 	background: #88495e;
 }
 
 #eris {
-	width: 20px;
-	height: 20px;
+	transform: translate(0, -50%) scale(0.2);
 }
 
 @keyframes planetrotationcounterclockwise {
@@ -1191,13 +1168,19 @@ h2 {
 
 /* ------------------- HAUMEA ------------------- */
 
+#haumea {
+	width: 150px;
+	height: 100px;
+	border-radius: 50px;
+}
+
 #haumea .planet-shadow {
 	height: 150%;
 	top: -25%;
 }
 
 #haumea .planet-surface {
-	border-radius: 33% / 50%;
+	border-radius: 50px;
 }
 
 #haumea .spot:nth-child(1) {
