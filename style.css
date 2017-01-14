@@ -196,12 +196,12 @@ h2 {
 }
 
 #haumea {
-	transform: translate(0, -50%) scale(0.125);
+	transform: translate(0, -50%) scale(0.13);
 	background: #a9b7c1;
 }
 
 #makemake {
-	transform: translate(0, -50%) scale(0.13);
+	transform: translate(0, -50%) scale(0.1425);
 	background: #88495e;
 }
 
