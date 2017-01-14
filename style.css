@@ -202,6 +202,7 @@ h2 {
 
 #makemake {
 	transform: translate(0, -50%) scale(0.2);
+	background: #88495e;
 }
 
 #eris {
@@ -1178,6 +1179,10 @@ h2 {
 	top: -25%;
 }
 
+#haumea .planet-surface {
+	border-radius: 50px;
+}
+
 #haumea .spot:nth-child(1) {
 	background: #a3919d;
 	top: 22%;
@@ -1253,4 +1258,17 @@ h2 {
 	left: 65%;
 	width: 15%;
 	height: 45%;
+}
+
+/* ------------------- MAKEMAKE ------------------- */
+
+#makemake .crater {
+	background: #985c6f;
+}
+
+#makemake .crater:nth-child(1) {
+	top: 0;
+	left: 0;
+	width: 10%;
+	height: 20%;
 }
