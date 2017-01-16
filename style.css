@@ -70,7 +70,7 @@ h2 {
 }
 
 .uncleared .path-container {
-	transform: translate(0, 5px);
+	margin-top: calc(-100% + 105px);
 }
 
 .uncleared .path {
