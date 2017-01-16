@@ -3,12 +3,17 @@
 }
 
 body {
+	margin: 0;
+}
+
+#main {
 	background: #0f001e;
 	color: white;
 	text-align: center;
 	overflow-x: hidden;
-	width: 200%;
-	margin-left: -50%;
+	width: 100%;
+	height: 100%;
+	position: fixed;
 }
 
 h2 {
@@ -24,25 +29,62 @@ h2 {
 	text-align: center;
 }
 
-#sun {
-	width: 100px;
-	height: 100px;
-	display: block;
-	border-radius: 50%;
-	margin: 0 auto;
-	width: 100%;
-	padding-bottom: 100%;
-	background: #ff8a3c;
-	margin-bottom: 100px;
+#solar-system {
+	margin-top: calc(-200% + 100px);
 }
 
-#solar-system {
-	margin-top: calc(-100% + 100px);
+#sun {
+	display: block;
+	border-radius: 50%;
+	width: 200%;
+	padding-bottom: 200%;
+	background: #ff8a3c;
+	margin-bottom: 100px;
+	margin-left: -50%;
 }
 
 .orbit {
 	width: 100%;
 	height: 200px;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.path-container {
+	position: absolute;
+	width: 200%;
+	padding-bottom: 100%;
+	margin-top: calc(-100% + 100px);
+	margin-left: -50%;
+	opacity: 0.25;
+	overflow: hidden;
+}
+
+.path {
+	position: absolute;
+	width: 100%;
+	height: 200%;
+	top: -100%;
+	border-radius: 50%;
+	border: 2px solid white;
+	/*animation: spin 500s linear infinite;*/
+	z-index: 6;
+}
+
+.uncleared .path-container {
+	transform: translate(0, 5px);
+}
+
+.uncleared .path {
+	border: 10px solid white;
+	opacity: 0.25;
 }
 
 .planet {
@@ -98,44 +140,6 @@ h2 {
 .planet:hover .planet-shadow::after {
 	top: 0%;
 	left: 100%;
-}
-
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-.path-container {
-	position: absolute;
-	width: 200%;
-	padding-bottom: 100%;
-	margin-top: calc(-100% + 100px);
-	opacity: 0.25;
-	overflow: hidden;
-}
-
-.path {
-	position: absolute;
-	width: 100%;
-	height: 200%;
-	top: -100%;
-	border-radius: 50%;
-	border: 2px solid white;
-	/*animation: spin 500s linear infinite;*/
-	z-index: 6;
-}
-
-.uncleared .path-container {
-	transform: translate(0, 5px);
-}
-
-.uncleared .path {
-	border: 10px solid white;
-	opacity: 0.25;
 }
 
 #mercury {
