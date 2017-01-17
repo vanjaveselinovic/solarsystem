@@ -135,7 +135,6 @@ h2 {
 
 #mercury {
 	transform: translate(0, -50%) scale(0.2);
-	background: #9b8990;
 }
 
 #venus {
@@ -144,22 +143,18 @@ h2 {
 
 #earth {
 	transform: translate(0, -50%) scale(0.4);
-	background: #2b84e6;
 }
 
 #mars {
 	transform: translate(0, -50%) scale(0.3);
-	background: #974c6d;
 }
 
 #ceres {
 	transform: translate(0, -50%) scale(0.2);
-	background: #9b918b;
 }
 
 #jupiter {
 	transform: translate(0, -50%) scale(1.52);
-	background: #cb9d7c;
 }
 
 #jupiter:hover {
@@ -168,7 +163,6 @@ h2 {
 
 #saturn {
 	transform: translate(0, -50%) scale(1.2);
-	background: #dcba7f;
 }
 
 #saturn:hover {
@@ -177,27 +171,22 @@ h2 {
 
 #uranus {
 	transform: translate(0, -50%) scale(0.6);
-	background: #87cce0;
 }
 
 #neptune {
 	transform: translate(0, -50%) scale(0.6);
-	background: #0f5aff;
 }
 
 #pluto {
 	transform: translate(0, -50%) scale(0.2);
-	background: #bc9d8a;
 }
 
 #haumea {
 	transform: translate(0, -50%) scale(0.13);
-	background: #a9b7c1;
 }
 
 #makemake {
 	transform: translate(0, -50%) scale(0.1425);
-	background: #88495e;
 }
 
 #eris {
@@ -294,6 +283,10 @@ h2 {
 }
 
 /* ------------------- MERCURY ------------------- */
+
+#mercury {
+	background: #9b8990;
+}
 
 #mercury .surface .crater {
 	background: #a3949b;
@@ -475,6 +468,10 @@ h2 {
 
 /* ------------------- EARTH ------------------- */
 
+#earth {
+	background: #2b84e6;
+}
+
 #earth .surface .landmass {
 	background: #42991e;
 }
@@ -623,6 +620,10 @@ h2 {
 
 /* ------------------- MARS ------------------- */
 
+#mars {
+	background: #974c6d;
+}
+
 #mars .crater {
 	background: #c25848;
 }
@@ -750,6 +751,10 @@ h2 {
 
 /* ------------------- CERES ------------------- */
 
+#ceres {
+	background: #9b918b;
+}
+
 #ceres .crater {
 	background: #88929d;
 }
@@ -830,6 +835,10 @@ h2 {
 }
 
 /* ------------------- JUPITER ------------------- */
+
+#jupiter {
+	background: #cb9d7c;
+}
 
 #jupiter .surface .spot:nth-child(1) {
 	top: 60%;
@@ -913,6 +922,10 @@ h2 {
 
 /* ------------------- SATURN ------------------- */
 
+#saturn {
+	background: #dcba7f;
+}
+
 #saturn .band:nth-child(1) {
 	height: 20%;
 	top: 0;
@@ -938,6 +951,10 @@ h2 {
 }
 
 /* ------------------- URANUS ------------------- */
+
+#uranus {
+	background: #87cce0;
+}
 
 #uranus .line {
 	z-index: 1;
@@ -979,6 +996,10 @@ h2 {
 }
 
 /* ------------------- NEPTUNE ------------------- */
+
+#neptune {
+	background: #0f5aff;
+}
 
 #neptune .surface .spot:nth-child(1) {
 	top: 55%;
@@ -1042,6 +1063,10 @@ h2 {
 }
 
 /* ------------------- PLUTO ------------------- */
+
+#pluto {
+	background: #bc9d8a;
+}
 
 #pluto .crater {
 	background: #a58275;
@@ -1164,6 +1189,7 @@ h2 {
 /* ------------------- HAUMEA ------------------- */
 
 #haumea {
+	background: #a9b7c1;
 	width: 150px;
 	height: 100px;
 	border-radius: 50px;
@@ -1256,6 +1282,10 @@ h2 {
 }
 
 /* ------------------- MAKEMAKE ------------------- */
+
+#makemake {
+	background: #88495e;
+}
 
 #makemake .crater {
 	background: #985c6f;
