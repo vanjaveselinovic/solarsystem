@@ -43,6 +43,8 @@ h2 {
 	margin-left: -50%;
 }
 
+/* ------------------- ORBIT and PATH ------------------- */
+
 .orbit {
 	width: 100%;
 	height: 200px;
@@ -77,6 +79,8 @@ h2 {
 	border: 10px solid white;
 	opacity: 0.25;
 }
+
+/* ------------------- PLANET ------------------- */
 
 .planet {
 	width: 100px;
@@ -132,6 +136,51 @@ h2 {
 	top: 0%;
 	left: 100%;
 }
+
+/* ------------------- MOON ------------------- */
+
+.moons {
+	display: none;
+}
+
+.moon {
+	border-radius: 50%;
+	position: absolute;
+	background: white;
+	pointer-events: none;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.moon:nth-child(1) {
+	left: -60%;
+}
+
+.moon:nth-child(2) {
+	left: 110%;
+}
+
+.moon:nth-child(3) {
+	left: -120%;
+}
+
+.moon:nth-child(4) {
+	left: 170%;
+}
+
+.moon:nth-child(5) {
+	left: -180%;
+}
+
+.moon:nth-child(6) {
+	left: 230%;
+}
+
+.moon:nth-child(7) {
+	left: -240%;
+}
+
+/* ------------------- PLANETS ------------------- */
 
 #mercury {
 	transform: translate(0, -50%) scale(0.2);
@@ -192,6 +241,150 @@ h2 {
 #eris {
 	transform: translate(0, -50%) scale(0.2);
 }
+
+/* ------------------- MOONS ------------------- */
+
+/* of earth */
+
+#luna {
+	width: 50px;
+	height: 50px;
+}
+
+/* of mars */
+
+#phobos, #deimos {
+	width: 2px;
+	height: 2px;
+}
+
+/* of jupiter */
+
+#io {
+	width: 12px;
+	height: 12px;
+}
+
+#europa {
+	width: 10px;
+	height: 10px;
+}
+
+#ganymede {
+	width: 18px;
+	height: 18px;
+}
+
+#callisto {
+	width: 16px;
+	height: 16px;
+}
+
+/* of saturn */
+
+#mimas {
+	width: 2px;
+	height: 2px;
+}
+
+#enceladus {
+	width: 2px;
+	height: 2px;
+}
+
+#tethys {
+	width: 4px;
+	height: 4px;
+}
+
+#dione {
+	width: 5px;
+	height: 5px;
+}
+
+#rhea {
+	width: 8px;
+	height: 8px;
+}
+
+#titan {
+	width: 22px;
+	height: 22px;
+}
+
+#iapetus {
+	width: 8px;
+	height: 8px;
+}
+
+/* of uranus */
+
+#ariel {
+	width: 12px;
+	height: 12px;
+}
+
+#umbriel {
+	width: 12px;
+	height: 12px;
+}
+
+#titania {
+	width: 18px;
+	height: 18px;
+}
+
+#oberon {
+	width: 18px;
+	height: 18px;
+}
+
+#miranda {
+	width: 6px;
+	height: 6px;
+}
+
+/* of neptune */
+
+#triton {
+	width: 30px;
+	height: 30px;
+}
+
+/* of pluto */
+
+#charon {
+	width: 50px;
+	height: 50px;
+}
+
+/* of haumea */
+
+#hi-iaka {
+	width: 2px;
+	height: 2px;
+}
+
+#namaka {
+	width: 2px;
+	height: 2px;
+}
+
+/* of makemake */
+
+#mk-2 {
+	width: 2px;
+	height: 2px;
+}
+
+/* of eris */
+
+#dysnomia {
+	width: 4px;
+	height: 4px;
+}
+
+/* ------------------- SURFACE ------------------- */
 
 @keyframes planetrotationcounterclockwise {
 	from {
