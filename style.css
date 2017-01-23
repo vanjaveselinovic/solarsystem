@@ -48,7 +48,6 @@ h2 {
 .orbit {
 	width: 100%;
 	height: 200px;
-	overflow: hidden;
 }
 
 .path-container {
@@ -95,7 +94,7 @@ h2 {
 }
 
 .planet:hover {
-	transform: translate(0, -50%) !important;
+	transform: translate(0, -50%);
 }
 
 .planet-surface {
@@ -183,63 +182,168 @@ h2 {
 /* ------------------- PLANETS ------------------- */
 
 #mercury {
-	transform: translate(0, -50%) scale(0.2);
+	transform: translate(0, -50%) scale(0.2) rotate(0deg);
+}
+
+#mercury:hover {
+	transform: translate(0, -50%) rotate(0deg);
+}
+
+#mercury .planet-shadow::after {
+	transform: rotate(calc(45deg - 0deg));
 }
 
 #venus {
-	transform: translate(0, -50%) scale(0.4);
+	transform: translate(0, -50%) scale(0.4) rotate(-3deg);
+}
+
+#venus:hover {
+	transform: translate(0, -50%) rotate(-3deg) !important;
+}
+
+#venus .planet-shadow::after {
+	transform: rotate(calc(45deg + 3deg));
 }
 
 #earth {
-	transform: translate(0, -50%) scale(0.4);
+	transform: translate(0, -50%) scale(0.4) rotate(23deg);
+}
+
+#earth:hover {
+	transform: translate(0, -50%) rotate(23deg);
+}
+
+#earth .planet-shadow::after {
+	transform: rotate(calc(45deg - 23deg));
 }
 
 #mars {
-	transform: translate(0, -50%) scale(0.3);
+	transform: translate(0, -50%) scale(0.3) rotate(25deg);
+}
+
+#mars:hover {
+	transform: translate(0, -50%) rotate(25deg);
+}
+
+#mars .planet-shadow::after {
+	transform: rotate(calc(45deg - 25deg));
 }
 
 #ceres {
-	transform: translate(0, -50%) scale(0.2);
+	transform: translate(0, -50%) scale(0.2) rotate(4deg);
+}
+
+#ceres:hover {
+	transform: translate(0, -50%) rotate(4deg);
+}
+
+#ceres .planet-shadow::after {
+	transform: rotate(calc(45deg - 4deg));
 }
 
 #jupiter {
-	transform: translate(0, -50%) scale(1.52);
+	transform: translate(0, -50%) scale(1.52) rotate(3deg);
 }
 
 #jupiter:hover {
-	transform: translate(0, -50%) scale(1.6) !important;
+	transform: translate(0, -50%) scale(1.6) rotate(3deg) !important;
+}
+
+#jupiter .planet-shadow::after {
+	transform: rotate(calc(45deg - 3deg));
 }
 
 #saturn {
-	transform: translate(0, -50%) scale(1.2);
+	transform: translate(0, -50%) scale(1.2) rotate(27deg);
 }
 
 #saturn:hover {
-	transform: translate(0, -50%) scale(1.52) !important;
+	transform: translate(0, -50%) scale(1.52) rotate(27deg) !important;
+}
+
+#saturn .planet-shadow::after {
+	transform: rotate(calc(45deg - 27deg));
 }
 
 #uranus {
-	transform: translate(0, -50%) scale(0.6);
+	transform: translate(0, -50%) scale(0.6) rotate(-82deg);
+}
+
+#uranus:hover {
+	transform: translate(0, -50%) rotate(-82deg);
+}
+
+#uranus .planet-shadow::after {
+	transform: rotate(calc(45deg + 82deg));
+}
+
+#uranus:hover .planet-shadow::after {
+	top: 50%;
+	left: 50%;
 }
 
 #neptune {
-	transform: translate(0, -50%) scale(0.6);
+	transform: translate(0, -50%) scale(0.6) rotate(28deg);
+}
+
+#neptune:hover {
+	transform: translate(0, -50%) rotate(28deg);
+}
+
+#neptune .planet-shadow::after {
+	transform: rotate(calc(45deg - 28deg));
 }
 
 #pluto {
-	transform: translate(0, -50%) scale(0.2);
+	transform: translate(0, -50%) scale(0.2) rotate(-57deg);
+}
+
+#pluto:hover {
+	transform: translate(0, -50%) rotate(-57deg);
+}
+
+#pluto .planet-shadow::after {
+	transform: rotate(calc(45deg + 57deg));
+}
+
+#pluto:hover .planet-shadow::after {
+	top: 50%;
 }
 
 #haumea {
-	transform: translate(0, -50%) scale(0.13);
+	transform: translate(0, -50%) scale(0.13) rotate(0deg);
+}
+
+#haumea:hover {
+	transform: translate(0, -50%) rotate(0deg);
+}
+
+#haumea .planet-shadow::after {
+	transform: rotate(calc(45deg - 0deg));
 }
 
 #makemake {
 	transform: translate(0, -50%) scale(0.1425);
 }
 
+#makemake:hover {
+	transform: translate(0, -50%) rotate(0deg);
+}
+
+#makemake .planet-shadow::after {
+	transform: rotate(calc(45deg - 0deg));
+}
+
 #eris {
 	transform: translate(0, -50%) scale(0.2);
+}
+
+#eris:hover {
+	transform: translate(0, -50%) rotate(0deg);
+}
+
+#eris .planet-shadow::after {
+	transform: rotate(calc(45deg - 0deg));
 }
 
 /* ------------------- MOONS ------------------- */
@@ -395,6 +499,7 @@ h2 {
 	}
 }
 
+
 @keyframes planetrotationclockwise {
 	from {
 		left: 0;
@@ -413,9 +518,10 @@ h2 {
 	animation: planetrotationcounterclockwise 2.5s linear infinite;
 }
 
-#venus .surface-container {
+.planet.upside-down .surface-container {
 	animation-name: planetrotationclockwise;
 }
+
 
 .surface {
 	position: absolute;
