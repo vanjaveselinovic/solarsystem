@@ -136,48 +136,6 @@ h2 {
 	left: 100%;
 }
 
-/* ------------------- MOON ------------------- */
-
-.moons {
-	display: none;
-}
-
-.moon {
-	border-radius: 50%;
-	position: absolute;
-	background: white;
-	pointer-events: none;
-	top: 50%;
-	transform: translate(0, -50%);
-}
-
-.moon:nth-child(1) {
-	left: -60%;
-}
-
-.moon:nth-child(2) {
-	left: 110%;
-}
-
-.moon:nth-child(3) {
-	left: -120%;
-}
-
-.moon:nth-child(4) {
-	left: 170%;
-}
-
-.moon:nth-child(5) {
-	left: -180%;
-}
-
-.moon:nth-child(6) {
-	left: 230%;
-}
-
-.moon:nth-child(7) {
-	left: -240%;
-}
 
 /* ------------------- PLANETS ------------------- */
 
@@ -346,6 +304,49 @@ h2 {
 	transform: rotate(calc(45deg - 0deg));
 }
 
+/* ------------------- MOON ------------------- */
+
+.moons {
+	display: none;
+}
+
+.moon {
+	border-radius: 50%;
+	position: absolute;
+	background: white;
+	pointer-events: none;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.moon:nth-child(1) {
+	left: -60%;
+}
+
+.moon:nth-child(2) {
+	left: 110%;
+}
+
+.moon:nth-child(3) {
+	left: -120%;
+}
+
+.moon:nth-child(4) {
+	left: 170%;
+}
+
+.moon:nth-child(5) {
+	left: -180%;
+}
+
+.moon:nth-child(6) {
+	left: 230%;
+}
+
+.moon:nth-child(7) {
+	left: -240%;
+}
+
 /* ------------------- MOONS ------------------- */
 
 /* of earth */
@@ -488,6 +489,48 @@ h2 {
 	height: 4px;
 }
 
+
+/* ------------------- RING ------------------- */
+
+.rings {
+	position: absolute;
+	pointer-events: none;
+	left: -75%;
+	width: 250%;
+	height: 15%;
+	overflow: hidden;
+	transition: height 0.2s;
+}
+
+.planet:hover .rings {
+	height: 40%;
+}
+
+.rings.infront {
+	top: 50%;
+	z-index: 100;
+}
+
+.rings.behind {
+	bottom: 50%;
+}
+
+.ring {
+	width: 100%;
+	height: 200%;
+	position: absolute;
+}
+
+.rings.infront .ring {
+	bottom: 0;
+	border-radius: 0 0 100% 100%;
+}
+
+.rings.behind .ring {
+	top: 0;
+	border-radius: 100% 100% 0 0;
+}
+
 /* ------------------- SURFACE ------------------- */
 
 @keyframes planetrotationcounterclockwise {
@@ -583,7 +626,7 @@ h2 {
 
 /* ------------------- MERCURY ------------------- */
 
-#mercury {
+#mercury .surface-container {
 	background: #9b8990;
 }
 
@@ -767,7 +810,7 @@ h2 {
 
 /* ------------------- EARTH ------------------- */
 
-#earth {
+#earth .surface-container {
 	background: #2b84e6;
 }
 
@@ -919,7 +962,7 @@ h2 {
 
 /* ------------------- MARS ------------------- */
 
-#mars {
+#mars .surface-container {
 	background: #974c6d;
 }
 
@@ -1050,7 +1093,7 @@ h2 {
 
 /* ------------------- CERES ------------------- */
 
-#ceres {
+#ceres .surface-container {
 	background: #9b918b;
 }
 
@@ -1135,7 +1178,7 @@ h2 {
 
 /* ------------------- JUPITER ------------------- */
 
-#jupiter {
+#jupiter .surface-container {
 	background: #cb9d7c;
 }
 
@@ -1221,7 +1264,7 @@ h2 {
 
 /* ------------------- SATURN ------------------- */
 
-#saturn {
+#saturn .surface-container {
 	background: #dcba7f;
 }
 
@@ -1249,9 +1292,19 @@ h2 {
 	background: repeating-linear-gradient(135deg, #dcba7f 2%, #cda288 10%);
 }
 
+#saturn .ring {
+	opacity: 0.75;
+	background: radial-gradient(ellipse closest-side,
+		transparent 0%, transparent 60%,
+		#969382 60%, #969382 70%,
+		#dcba7f 70%, #dcba7f 85%,
+		transparent 85%, transparent 90%,
+		#bd9988 90%);
+}
+
 /* ------------------- URANUS ------------------- */
 
-#uranus {
+#uranus .surface-container {
 	background: #87cce0;
 }
 
@@ -1296,7 +1349,7 @@ h2 {
 
 /* ------------------- NEPTUNE ------------------- */
 
-#neptune {
+#neptune .surface-container {
 	background: #0f5aff;
 }
 
@@ -1363,7 +1416,7 @@ h2 {
 
 /* ------------------- PLUTO ------------------- */
 
-#pluto {
+#pluto .surface-container {
 	background: #bc9d8a;
 }
 
@@ -1487,7 +1540,7 @@ h2 {
 
 /* ------------------- HAUMEA ------------------- */
 
-#haumea {
+#haumea .surface-container {
 	background: #a9b7c1;
 	width: 150px;
 	height: 100px;
@@ -1582,7 +1635,7 @@ h2 {
 
 /* ------------------- MAKEMAKE ------------------- */
 
-#makemake {
+#makemake .surface-container {
 	background: #88495e;
 }
 
@@ -1599,7 +1652,7 @@ h2 {
 
 /* ------------------- ERIS ------------------- */
 
-#eris {
+#eris .surface-container {
 	background: #d7d6ef;
 }
 
