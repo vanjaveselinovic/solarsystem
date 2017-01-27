@@ -114,7 +114,6 @@ h2 {
 	border-radius: 45%;
 	z-index: 5;
 	opacity: 0.9;
-	transition: top 0.5s, left 0.5s;
 	overflow: hidden;
 }
 
@@ -558,7 +557,7 @@ h2 {
 	height: 100%;
 	top: 0;
 	left: 0;
-	animation: planetrotationcounterclockwise 2.5s linear infinite;
+	animation: planetrotationcounterclockwise 5s linear infinite;
 }
 
 .planet.upside-down .surface-container {
@@ -584,7 +583,7 @@ h2 {
 	height: 100%;
 	top: 0;
 	left: 0;
-	animation: planetrotationcounterclockwise 5s linear infinite;
+	animation: planetrotationcounterclockwise 10s linear infinite;
 }
 
 .clouds {
