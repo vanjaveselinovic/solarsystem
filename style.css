@@ -90,7 +90,7 @@ h2 {
 	top: 50%;
 	position: relative;
 	z-index: 1;
-	transition: transform 0.2s;
+	transition: transform 0.4s;
 }
 
 .planet:hover {
@@ -127,7 +127,7 @@ h2 {
 	transform: rotate(45deg);
 	background: #0f001e;
 	content: '';
-	transition: top 0.2s, left 0.2s;
+	transition: top 0.4s, left 0.4s;
 }
 
 .planet:hover .planet-shadow::after {
@@ -498,7 +498,7 @@ h2 {
 	width: 250%;
 	height: 15%;
 	overflow: hidden;
-	transition: height 0.2s;
+	transition: height 0.4s;
 }
 
 .planet:hover .rings {
