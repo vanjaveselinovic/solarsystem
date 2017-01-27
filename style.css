@@ -303,6 +303,14 @@ h2 {
 	transform: rotate(calc(45deg - 0deg));
 }
 
+#nine {
+	transform: translate(0, -50%) scale(0.6);
+}
+
+#nine:hover {
+	transform: translate(0, -50%);
+}
+
 /* ------------------- MOON ------------------- */
 
 .moons {
@@ -1731,4 +1739,19 @@ h2 {
 #eris .line:nth-child(10) {
 	left: 53%;
 	transform: rotate(-10deg);
+}
+
+/* ------------------- NINE ------------------- */
+
+#nine .surface-container {
+	background: #4b4056;
+}
+
+#nine .surface {
+	color: #87808f;
+	font-family: 'Quicksand', monospace;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 100px;
+	letter-spacing: 75px;
 }
