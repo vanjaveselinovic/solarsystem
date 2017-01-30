@@ -135,7 +135,6 @@ h2 {
 	left: 100%;
 }
 
-
 /* ------------------- PLANETS ------------------- */
 
 #mercury {
@@ -1269,6 +1268,15 @@ h2 {
 	height: 10%;
 }
 
+#jupiter .ring {
+	opacity: 0.175;
+	background: radial-gradient(ellipse closest-side,
+		transparent 0%, transparent 65%,
+		white 65%, white 70%,
+		#888888 70%, #888888 88%,
+		#aaaaaa 88%);
+}
+
 /* ------------------- SATURN ------------------- */
 
 #saturn .surface-container {
@@ -1354,6 +1362,17 @@ h2 {
 	background: repeating-linear-gradient(45deg, #87cce0 2%, #88bcc1 10%);
 }
 
+#uranus .ring {
+	opacity: 0.5;
+	background: radial-gradient(ellipse closest-side,
+		transparent 0%, transparent 65%,
+		#7cb7c5 65%, #7cb7c5 70%,
+		transparent 70%, transparent 75%,
+		#dcba7f 75%, #dcba7f 80%,
+		transparent 80%, transparent 95%,
+		#666666 95%);
+}
+
 /* ------------------- NEPTUNE ------------------- */
 
 #neptune .surface-container {
@@ -1419,6 +1438,15 @@ h2 {
 #neptune .surface .band:nth-child(9) {
 	background: #0f5aff;
 	top: 40%;
+}
+
+#neptune .ring {
+	opacity: 0.5;
+	background: radial-gradient(ellipse closest-side,
+		transparent 0%, transparent 75%,
+		#0f47cf 75%, #0f47cf 80%,
+		transparent 80%, transparent 90%,
+		#555555 90%);
 }
 
 /* ------------------- PLUTO ------------------- */
